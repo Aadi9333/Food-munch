@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food munch</title>
+    <style>
+        .navbar{
+            height: 100px;
+            width: 99vw;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+        }
+        #nav-options{
+            width: 40%;
+            height: 100%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            color:black;
+            justify-content: space-around;
+                   }
+                   #nav-options>a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+               
+        .img{
+    height: 75px;
+    margin-left: 20px;
+}
+@media screen and (min-width:0px) and (max-width:600px) {
+
+.img{
+    display: none;
+
+}
+}
+#nav-options{
+        width: 50%;
+    }
+
+#nav-options>a{
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+           justify-content: center;
+           gap: 40px;
+        }
+        .hero button{
+    height: 40px;
+  width: 150px;
+  border-radius:15px;
+}
+
+
+        .hero{
+            background-image:url(hero.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 20px;
+        }
+        
+        #vm{
+            background-color: #d0b200;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+
+}
+        #on{
+            background-color: transparent;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid white
+}
+#vm:hover{
+    background-color: blueviolet;
+    color: yellow;
+}
+#on:hover{
+    background-color: aquamarine;
+    color:#d0b200;
+}
+.hero>h1{
+    font-size: 50px;
+    color: aqua;
+
+}
+.hero>h3{
+    font-size: 32px;
+    color:orange;
+}
+.hero button{
+    height: 50px;
+  width: 150px;
+  border-radius:20px;
+}
+
+.container{
+    display: flex;
+    text-align: center; 
+    justify-content: first baseline;   
+}
+#one{
+border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+}
+#two{
+    border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+}
+#three{
+    border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#fm{
+    font-family: sans-serif;
+}
+.box1{
+    height:500px;
+     width:1050px;
+      display:flex;
+      gap:10px;
+      margin-bottom: -150px;
+      
+    } 
+.item1{ 
+    height:300px; 
+    width:300px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  
+ } 
+ .imgimg{
+     height:200px;
+     width:200px;
+     border-radius: 20px;
+     margin-left: 20px;
+     margin-top: 10px;
+    }
+    .item2{ 
+    height:300px; 
+    width:300px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  
+ } 
+ .item3{ 
+    height:300px; 
+    width:300px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  
+ } 
+ .item4{ 
+    height:300px; 
+    width:300px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  
+ } 
+
+ .box2{
+    height:500px;
+     width:1050px;
+      display:flex;
+      gap:10px;
+      margin-bottom: -100px;      
+    } 
+    .item5{ 
+    height:300px; 
+    width:300px;
+    border-radius: 20px;
+    border-color: blue solid;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;   
+    text-decoration: none;
+    }
+    .item6{ 
+    height:300px; 
+    width:300px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    .item7{ 
+    height:300px; 
+    width:300px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    .item8{ 
+    height:300px; 
+    width:300px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    h3{
+        color: blue;
+        margin-left: 30px;
+    }
+    h4{
+        color: yellowgreen;
+        margin-left: 30px;
+    }
+    .part5{
+        display: flex;
+    }
+    .p5{
+        display: grid;
+        color: cadetblue;
+    }
+    button{
+        height: 40px;
+        width: 150px;
+        font-size: medium;
+        border-radius: 20px;
+        background-color:blueviolet lightgreen;
+        border-color: cadetblue;
+
+        
+    }
+    .part6{
+        display: flex;
+    }
+    .pr6img1{
+        height: 60px;
+        width: 60px;
+        padding: 15px 15px 15px 15px;
+    }
+    .pr6img2{
+        height: 300px;
+        width: 300px;
+        margin-left: 150px;
+        margin-right: 100px;
+    }
+    button{
+        height: 40px;
+        width: 150px;
+        font-size: medium;
+        border-radius: 10px;
+        background-color: rgb(208, 178, 0);
+        color: white;
+    }
+    #p6h1{
+        font-family: "roboto";
+    font-size: 30px;
+    font-weight: 600;
+    color: #183b56;
+    }
+    p{
+        color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+    }
+.partseven{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: auto;
+    justify-content: space-between;
+    background-color:#fcebab;
+    border-radius: 3px;
+}
+button{
+        height: 40px;
+        width: 150px;
+        font-size: medium;
+        border-radius: 10px;
+        background-color: rgb(208, 178, 0);
+        color: white;
+    }
+    p{
+        color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+    }
+    .pr7h1{
+        font-family: "roboto";
+    font-size: 17px;
+    font-weight: 600;
+    color: #183b56;
+    }
+    .parteight{
+       
+        align-content: center;
+    }
+    .pr8img{
+        height: 85px;
+        width: 85px;
+        padding: 20px 20px 20px 20px;
+        margin-left: 30px;
+        border-radius: 60px;
+    }
+    .pr8two{
+        margin-left: 300px;
+        border-radius: 20px;
+    }
+    .pr8h1{
+        margin-left: 470px;
+        font-size: 40px;
+        color: blue;
+    }
+.partnine{
+    background-color: #0d2436;
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 16px;  
+    border-radius: 20px; 
+}
+.pr9img{
+    margin-left: 470px;
+}
+.pr9h3{
+    margin-left: 380px;
+}
+.pr9p{
+    margin-left: 380px;
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+<div class="navbar">
+        <img class="img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" alt="">
+        <div id="nav-options">
+            <a href="">Why choose us?</a>
+            <a href="">Explore Menu</a>
+            <a href="">Delivery & Payment</a>
+            <a href="">Follow Us</a>
+        </div>
+    </div>
+
+    <!-------------------------->
+
+    <div class="hero">
+        <h1>Get Delicious Food Anytime</h1>
+        <h3>Eat Smart & Healthy</h3>
+        <div>
+        <button id="vm">View Menu</button>
+        <button id="on">Order Now</button>
+    </div>
+    
+    </div>
+    <h1>Why choose us?</h1>
+    <p id="fm">We use both original recipes and classic versions of famous food items.</p>
+
+    <!------------->
+<div>
+    <div class="container">
+        <div id="one">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" alt="">
+            <h1>Food Service</h1>
+            <p>Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you the nothing less than perfect.</p>
+        </div>
+        <div id="two">
+            <img src="https://code-with-akash.github.io/foodmunch/images/img-fruits.png" alt="">
+            <h1>Fresh Food</h1>
+            <p>The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.</p>
+        </div>
+        <div id="three">
+            <img src="https://code-with-akash.github.io/foodmunch/images/img-price.png" alt="">       
+        <h1>Best Offers</h1>
+            <p>Food Coupons & Offers upto <b>50% OFF</b> and Exclusive Promo Codes on All Online Food Orders.</p>
+        </div>
+    </div>
+        
+        <!---------------------->
+        <h1>Explore Menu</h1>
+    <div class="box1">
+        <div class="item1">
+           <div> <img class="imgimg" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" alt="">
+           </div>
+       <div>
+            <h3>Non-Veg Starters</h3>
+            </div>
+            <div>
+            <h4>View All &rarr;</h4>
+        </div>
+    </div>
+         
+        <div class="item2">
+            <div>
+                <img class="imgimg" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" alt="">
+            </div>
+            <div>
+            <h3>Veg Starters</h3>
+            </div>
+            <div>
+                <h4>View All &rarr;</h4>
+        </div>
+    </div>
+     <div class="item3">
+        <div>
+            <img class="imgimg" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" alt="">
+        </div>
+        <div>
+        <h3>Soups</h3>
+    </div>
+    <div>
+        <h4>View All &rarr;</h4>
+    </div>
+            </div>
+         <div class="item4">
+            <div><img class="imgimg" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" alt="">
+                </div>
+                <div>
+       <h3>Fish & Sea food</h3>
+    </div>
+    <div>
+       <h4>View All &rarr;</h4>
+    </div>
+    </div>
+    </div>
+    <div class="box2">
+        <div class="item5">
+           <div> <img class="imgimg" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" alt="">
+           </div>
+       <div>
+            <h3>Main Course</h3>
+            </div>
+            <div>
+            <h4>View All &rarr;</h4>
+        </div>
+    </div>
+         
+        <div class="item6">
+            <div>
+                <img class="imgimg" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" alt="">
+            </div>
+            <div>
+            <h3>Noodles</h3>
+            </div>
+            <div>
+                <h4>View All &rarr;</h4>
+        </div>
+    </div>
+     <div class="item7">
+        <div>
+            <img class="imgimg" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" alt="">
+        </div>
+        <div>
+        <h3>Salads</h3>
+    </div>
+    <div>
+        <h4>View All &rarr;</h4>
+    </div>
+            </div>
+         <div class="item8">
+            <div><img class="imgimg" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" alt="">
+                </div>
+                <div>
+       <h3>Desserts</h3>
+    </div>
+    <div>
+       <h4>View All &rarr;</h4>
+    </div>
+    </div>
+    </div>
+    <!------------------------>
+    <div class="part5">
+        <div>
+            <img src="https://code-with-akash.github.io/foodmunch/images/healthy-food-img.png" alt="">
+        </div>
+        <div class="p5">
+        <h1>Fresh, Healthy, Organic, Delicious Fruits</h1>
+        <p>Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies. Pamper your body and your senses with the true and unadulterated gifts from mother nature. with the true and unadulterated gifts from mother nature. A healthy diet is a diet that maintains or improves overall health. A healthy diet provides the body with essential nutrition: fluid, macronutrients such as protein, micronutrients such as vitamins, and adequate fibre and food energy.</p>
+        <button>Watch Vedio</button>
+        </div>
+    </div>
+    <!--------------------->
+    <div class="part6">
+        <div class="p6one">
+            <h1 id="p6h1"><b>Delivery and Payment</b>
+            </h1>
+            <p>Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get a 5% discount on every order every time you pay online.</p>
+            <div>
+            <button>Order Now</button>
+        </div>
+            <img class="pr6img1" src="https://code-with-akash.github.io/foodmunch/images/master-card-img.png" alt="">
+            <img class="pr6img1" src="https://code-with-akash.github.io/foodmunch/images/visa-card-img.png" alt="">
+            <img class="pr6img1" src="https://code-with-akash.github.io/foodmunch/images/paypal-card-img.png" alt="">
+            <img class="pr6img1" src="https://code-with-akash.github.io/foodmunch/images/american-express-img.png" alt="">
+        </div>
+<div class="p6two">
+    <img class="pr6img2" src="https://code-with-akash.github.io/foodmunch/images/payment-section-img.png"  alt="">
+</div>
+    </div>
+    <!------------->
+    <div class="partseven">
+        <div>
+            <div class="pr7h1">
+            <h1>Thank you for being a valuable customer to us.</h1>
+        </div>
+        <p>We have a surprise gift for you</p>
+            <button>Redeem Gift</button>    
+    </div>
+
+    <div>
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" height="300px" width="300px" alt="">
+    </div>
+</div>
+<!--------------->
+<div class="parteight">
+<h1 class="pr8h1">Follow Us</h1>
+<div class="pr8two">
+    <img class="pr8img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnrH4-c-JnXh1bx80sRuyl56BzXTkJRFrKtppkdmicAgCoK_NQ" alt="">
+    <img class="pr8img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGPYRVx8_0NjLgM4yXxcpDzIY9YQaISJMDvV0jPIMgMd0bRlx" alt="">
+    <img class="pr8img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5V7bpsHQ150ydOhVi39sEVy94xTVDQ6ULJBQ4Looy5-w7lnLY" alt="">
+</div>
+</div>
+<!----------------->
+<div class="partnine">
+   <div> <img class="pr9img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" height="80px" width="80px" alt="">
+   </div>
+   <div class="pr9h3">
+    <h3><b>orderfood@foodmunch.com</b></h3>
+</div>
+<div class="pr9p">
+    <p>FoodMunch Hyderbad-KPHB-500085</p>
+</div>
+</div>
+</body>
+</html>
